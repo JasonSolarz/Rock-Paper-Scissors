@@ -1,31 +1,38 @@
-function getComputerChoice
-- pass in: nothing
-- create an array variable with 3 strings of "Rock", "Paper", "Scissors"
-- create a variable called computerChoice
-- Use Math.Random to select one of the 3 strings in the array and store it in computerChoice
-- return computerChoice
+// function getComputerChoice
+// - pass in: nothing
+// - create an array variable with 3 strings of "Rock", "Paper", "Scissors"
+// - create a variable called computerChoice
+// - Use Math.Random to select one of the 3 strings in the array and store it in computerChoice
+// - return computerChoice
 
-function playRound
-- pass in: playerSelection & computerSelection
-- format playerSelection, lowercase the string and make the first letter capital
-- Compare both arguments based this criteria:
-  - "Rock" > "Scissors"
-  - "Paper" > "Rock"
-  - "Scissors" > "Paper"
-  - playerSelection === computerSelection : Tie
-- Return a string of outcome - "Win", "Lose" or "Tie" depending on comparison results above.
+// function playRound
+// - pass in: playerSelection & computerSelection
+// - format playerSelection, lowercase the string and make the first letter capital
+// - Compare both arguments based this criteria:
+// if playerSelection === compSelection return "Tie"
+// else {
+// 	if playerSelection === "rock"
+// 		if compSelection == "paper" return "Lose"
+// 		if compSelection == "scissors" return "Win"
+// 	else if playerSelection === "paper"
+// 		if compSelection == "rock" return "win"
+// 		if compSelection == "scissors" return "Lose"
+// 	else
+// 		if compSelection == "rock" return "Lose"
+// 		if compSelection == "paper" return "Win"
+// - Return a string of outcome - "Win", "Lose" or "Tie" depending on comparison results above.
 
-function game
-- pass in: nothing
-- create a 2 element array to keep track of each score call scores, intial value will be 0, 0
-- use for loop to play 5 rounds of playRound()
-  - If "lose", increase computer score and message user "You Lose!"
-  - If "win", increase player score and message user "You Win!"
-  - If "tie", no increase and message user "Its a tie!"
-  - Message the user the round number using the loop iterator
+// function game
+// - pass in: nothing
+// - create a 2 element array to keep track of each score call scores, intial value will be 0, 0
+// - use for loop to play 5 rounds of playRound()
+//   - If "lose", increase computer score and message user "You Lose!"
+//   - If "win", increase player score and message user "You Win!"
+//   - If "tie", no increase and message user "Its a tie!"
+//   - Message the user the round number using the loop iterator
 
-Message the user, "Welcome To Rock Paper Scissors"
-Message the user, "Rules of Rock Paper Scissors"
+// Message the user, "Welcome To Rock Paper Scissors"
+// Message the user, "Rules of Rock Paper Scissors"
 
 
 
